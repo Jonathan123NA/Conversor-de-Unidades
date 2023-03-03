@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Volumen">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_titulo"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/btn_volumen"
+                android:textColor="@color/black"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/btn_inicio4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:backgroundTint="#000000"
+                android:onClick="cambiar"
+                android:text="@string/btn_inicio"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/edt_ingresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:text="@string/edt_cant"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinVolu"
+        android:layout_width="243dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:textSize="16sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:layout_marginTop="30dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_borrar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="#FF4545"
+                android:text="@string/btn_borrar"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                app:strokeColor="#630000"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/btn_volumen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:text="@string/btn_convertir"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/longitud"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:backgroundTint="#63F895"
+                android:onClick="cambiar"
+                android:text="@string/longitud"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"
+                app:strokeColor="#33D349"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/peso"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:backgroundTint="#B0F8F0"
+                android:onClick="cambiar"
+                android:text="@string/peso"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"
+                app:strokeColor="#0EAC9F"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/volumen"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:backgroundTint="#EF93EA"
+                android:onClick="cambiar"
+                android:text="@string/volumen"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"
+                app:strokeColor="#9C0B89"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/temperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F1E490"
+                android:onClick="cambiar"
+                android:text="@string/temperatura"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"
+                app:strokeColor="#D6CD1B"
+                app:strokeWidth="2dp" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

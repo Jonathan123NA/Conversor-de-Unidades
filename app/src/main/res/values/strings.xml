@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Conversor</string>
+    <string name="titulo">CONVERSOR DE UNIDADES</string>
+    <string name="btn_longitud">Longitud</string>
+    <string name="btn_peso">Peso</string>
+    <string name="btn_volumen">Volumen</string>
+    <string name="btn_temperatura">Temperatura</string>
+    <string name="edt_cant">Ingresa la cantidad</string>
+    <string name="btn_convertir">Convertir</string>
+    <string name="btn_borrar">Borrar</string>
+    <string name="longitud">LONG</string>
+    <string name="peso">PESO</string>
+    <string name="volumen">VOLU</string>
+    <string name="temperatura">TEMP</string>
+    <string name="btn_inicio">INICIO</string>
+
+</resources>
